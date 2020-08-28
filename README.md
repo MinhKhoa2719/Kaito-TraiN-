@@ -2,6 +2,7 @@
 
 
 Khái niệm, ưu điểm, nhược điểm, hoạt động thế nào, cài đặt ra sao, dùng thế nào
+
 Nginx là một phần mềm web server mã nguồn mở nổi tiếng
 
 
@@ -9,7 +10,7 @@ Nginx là một phần mềm web server mã nguồn mở nổi tiếng
 
 -Vì khả năng mạnh mẽ, và để có thể xử lý hàng ngàn kết nối cùng lúc, nhiều website có traffic lớn đã sử dụng dịch vụ NGINX
 
--web server hoạt động thế nào?  khi gửi một yêu cầu để mở một trang web. Trình duyệt sẽ liên lạc với server chứa website đó. Sau đó, server sẽ tìm kiếm đúng file yêu cầu của trang đó và gửi ngược về cho server.
+-Web server hoạt động thế nào?  khi gửi một yêu cầu để mở một trang web. Trình duyệt sẽ liên lạc với server chứa website đó. Sau đó, server sẽ tìm kiếm đúng file yêu cầu của trang đó và gửi ngược về cho server.
 
 -(Đây là một loại truy vấn đơn giản nhất.)*single thread – một bộ các bước xử lý dữ liệu được thực thi theo 1 trình tự duy nhất.
 
@@ -61,7 +62,7 @@ Tuy nhiên, NGINX hoạt động theo kiến trúc bất đồng bộ (async
 
 -Dễ dàng để mở rộng cho website hơn cũng như traffic web
 
-- Sử dụng như một HTTP proxy hay load balancer cho các web server khác. 
+-Sử dụng như một HTTP proxy hay load balancer cho các web server khác. 
 
 -Hiểu được NGINX là gì và cách NGINX làm việc và xử lý các request sẽ cung cấp nhiều sức mạnh để mở rộng (scaling) và cân bằng tải (balancing the load) cho ứng dụng của bạn.
 Khuyết điểm:
@@ -70,7 +71,7 @@ Khuyết điểm:
 
 Cài đặt ra sao, dùng thế nào
 
--sử dụng gói (package) dựng sẵn hoặc cài đặt từ source.
+-Sử dụng gói (package) dựng sẵn hoặc cài đặt từ source.
 
 -Để cài đặt một gói Debian dựng sẵn, thứ duy nhất cần làm là:
 
