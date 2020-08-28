@@ -1,6 +1,9 @@
-Nginx:
+![what-is-nginx](https://user-images.githubusercontent.com/54676091/91526395-b5bbb800-e92d-11ea-9b8b-2a2f0b6c4357.png)
+
+
 Khái niệm, ưu điểm, nhược điểm, hoạt động thế nào, cài đặt ra sao, dùng thế nào
 Nginx là một phần mềm web server mã nguồn mở nổi tiếng
+
 
 -Ban đầu thì nó dùng để phuc vụ http tuy nhiên hiện nay nó còn có thể được dùng để làm reverse proxy HTTP load balancer và emial proxy như IMAP, POP3 và SMtp
 -Vì khả năng mạnh mẽ, và để có thể xử lý hàng ngàn kết nối cùng lúc, nhiều website có traffic lớn đã sử dụng dịch vụ NGINX
@@ -11,6 +14,8 @@ Nghĩa là các bước được thực hiện theo một trình tự duy nhất
 Tuy nhiên, NGINX hoạt động theo kiến trúc bất đồng bộ (asynchronous) hướng sự kiện (event driven). Nó cho phép các threads tương đồng được quản lý trong một tiến process. Mỗi process hoạt động sẽ bao gồm các thực thể nhỏ hơn, gọi là worker connections dùng để xử lý tất cả threads.
 -Worker connections sẽ gửi các yêu cầu cho worker process, worker process sẽ gửi nó tới master process, và master process sẽ trả lời các yêu cầu đó. Đó là lý do vì sao một worker connection có thể xử lý đến 1024 yêu cầu tương tự nhau. 
 -Nhờ vậy, NGINX có thể xử lý hàng ngàn yêu cầu khác nhau cùng một lúc.
+
+![0_r2AvgpaSlbQtddsW](https://user-images.githubusercontent.com/54676091/91526592-34185a00-e92e-11ea-8970-3d41fd623d76.png)
 
 Điều này có vẻ đơn giản, một worker connection có thể xử lý đến 1024 yêu cầu tương tự nhau. Vì vậy, NGINX có thể xử lý hàng ngàn yêu cầu mà không gặp rắc rối gì.
 
@@ -51,12 +56,16 @@ Chi tiết
 https://topdev.vn/blog/nginx-la-gi/ https://medium.com/@dongnguyenltqb/nginx-l%C3%A0-g%C3%AC-setup-m%E1%BB%99t-server-serve-static-file-v%E1%BB%9Bi-nginx-12e439e2109e
 https://wiki.matbao.net/nginx-la-gi-huong-dan-kiem-tra-va-cai-dat-nginx-server/
 
+
 Khởi động NGINX
 
 -Sau khi chúng ta hoàn tất cấu hình và di chuyển ứng dụng web tới thư mục phù hợp, chúng ta có thể khởi động NGINX sử dụng lệnh dưới đây: sudo service nginx start
 -Sau đó, bất cứ khi nào chúng ta thay đổi cấu hình, chúng ta chỉ cần tải lại (không có thời gian downtime) sử dụng lệnh dưới đây: service nginx reload Cuối cùng, chúng ta có thể kiểm tra trạng thái của NGINX sử dụng lệnh dưới đây: service nginx status
 
 - So sánh nginx với các `web server` khác
+
+![search-terms-nginx-vs-apache-e1521229502606](https://user-images.githubusercontent.com/54676091/91526562-206cf380-e92e-11ea-9be1-b0d80b6bf9fc.png)
+
 Apache server 
  -Apache thiếu hỗ trợ từ chính công ty của nó, Apache Foundation
 -Hiệu năng của NGINX trên Windows lại tỏ ra kém hiệu quả hơn Apache
