@@ -98,7 +98,8 @@ Khởi động NGINX
 
 - So sánh nginx với các `web server` khác
 
-![search-terms-nginx-vs-apache-e1521229502606](https://user-images.githubusercontent.com/54676091/91526562-206cf380-e92e-11ea-9be1-b0d80b6bf9fc.png)
+![so-sanh-nginx-va-apache](https://user-images.githubusercontent.com/54676091/91528851-717ee680-e932-11ea-8cfa-c509eec95a2a.jpg)
+
 
 Apache server 
 
